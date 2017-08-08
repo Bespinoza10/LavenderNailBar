@@ -13,3 +13,16 @@
  *= require_tree .
  *= require_self
  */
+@import "materialize";
+@import "all/color";
+
+nav{
+    background-color: $white;
+    color: $secondary-color;
+    a.brand-logo{
+        color: #000;
+    }
+    ul li a{
+        color: #000;
+    }
+}
