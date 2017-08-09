@@ -15,6 +15,10 @@
  */
 @import "materialize";
 @import "all/color";
+.center-column{
+  float: none !important;
+  margin: 0 auto !important;
+}
 
 nav{
     background-color: $white;
