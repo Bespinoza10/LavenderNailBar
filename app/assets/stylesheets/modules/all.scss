@@ -1,6 +1,8 @@
 @import "materialize";
 @import "https://fonts.googleapis.com/icon?family=Material+Icons";
 @import "materialize/components/color";
-$primary-color: color("blue", "lighten-2") !default;
+$primary-color: color("purple", "darken-4") !default;
 $secondary-color: color("yellow", "base") !default;
+$lavender: color("purple", "darken-4") !default;
+$black-grey: color("grey", "darken-4") !default;
 $white: #fff;

@@ -25,3 +25,11 @@ header.home-bg {
     }
   }
 }
+
+footer.page-footer{
+  background: $black-grey !important;
+  .tel{
+    color: $white;
+    text-decoration: underline;
+  }
+}
