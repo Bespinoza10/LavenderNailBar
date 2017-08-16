@@ -1,7 +1,7 @@
 class TestimonialsController < ApplicationController
-
+  before_action :find_testimonial,  only: [:show, :edit, :update, :destroy]
   def index
-    @testimonial = Testimonial.all
+    @testimonials = Testimonial.all
   end
 
   def new
@@ -23,15 +23,16 @@ class TestimonialsController < ApplicationController
 
   def update
     if @testimonial.update testimonial_params
-      redirect_to @root_path, notice: "You have updated your testimonial from #{@testimonial.name}"
+      redirect_to root_path, notice: "You have updated your testimonial from #{@testimonial.name}"
     else
       render 'edit'
     end
+  end
   
-    def destroy
-      @testimonial.destroy
-      redirect_to root_path
-    end
+  def destroy
+    @testimonial.destroy
+    redirect_to root_path
+  end
 
   private
 
