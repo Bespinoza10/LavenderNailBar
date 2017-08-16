@@ -12,9 +12,14 @@
       letter-spacing: 2px;
       margin-top: -15px;
     } .btn-floating{
-      bottom: 20px;
+      bottom: 22px;
       left: 19px;
+      height: 40px;
+      width:40px;
       background: #8029A4;
+      i{
+        line-height: 42px;
+      }
     }
   }
 }
@@ -78,6 +83,42 @@ header.mani-bg {
     letter-spacing: 3px;
   }
   .mani{
+    padding-bottom: 5%;
+    .service-description, .xtra-service{
+      font-size: 18px;
+    }
+  }
+}
+
+
+//WAX
+header.wax-bg {
+  background-image: url('/assets/waxing_banner.jpg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+  background-size: cover;
+  max-height: 600px;;
+  color: #fff;
+  div.bg-text {
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+    text-transform: uppercase;
+    h1 {
+      color: #fff;
+      text-align: center;
+      letter-spacing: 12px;
+    }
+  }
+}
+
+#all_wax{
+  padding-top: 8%;
+  padding-bottom: 8%;
+  .wax-title{
+    letter-spacing: 3px;
+  }
+  .wax{
     padding-bottom: 5%;
     .service-description, .xtra-service{
       font-size: 18px;
