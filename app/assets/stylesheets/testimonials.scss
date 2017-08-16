@@ -1,0 +1,21 @@
+// Place all the styles related to the Testimonials controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+header.testimonial-bg {
+  background-image: url('/assets/testimonial_banner.jpg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+  background-size: cover;
+  max-height: 600px;;
+  color: #fff;
+  div.bg-text {
+    padding: 20vh;
+    text-transform: uppercase;
+    h1 {
+      color: #fff;
+      text-align: center;
+      letter-spacing: 12px;
+    }
+  }
+}
