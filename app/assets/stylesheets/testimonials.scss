@@ -1,15 +1,132 @@
 // Place all the styles related to the Testimonials controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import "modules/all";
+
 #testimonial-home{
-  padding-top: 8%;
-  background: none;
-  .slides{
-    height: 500px !important;
-  }.indicators{
-    z-index: 100;
+  background-image: url('/assets/testimonial-bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+  background-size: cover;
+  max-height: 600px;;
+  color: #fff;
+  .appt-btn{
+    margin-top: 80%;
+    outline: 6px solid $white;
+    // padding: 0em 4em !important;
+    letter-spacing: 3px;
+    background: none;
   }
+  #carousel {
+    position: relative;
+    width:90% !important;
+    margin:0 auto;
+    }
+    
+  #slides {
+  overflow: hidden;
+  position: relative;
+ 
+  }
+  
+  #slides ul {
+  list-style: none;
+  // width:100% !important;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  }
+  
+  #slides li {
+  // width:100% !important;
+  float:left;
+  text-align: center;
+  position: relative;
+  font-family:lato, sans-serif;
+  }
+  /* Styling for prev and next buttons */
+  .btn-bar{
+      margin: 0 auto;
+      display: block;
+      position: relative;
+      width: 100%;
+      padding-top: 20vh;
+      padding-bottom: 20vh;
+  }
+  
+  #buttons {
+  padding:0 0 5px 0;
+  float:right;
+  }
+  
+  #buttons a {
+  text-align:center;
+  display:block;
+  font-size:50px;
+  float:left;
+  outline:0;
+  margin:0 60px;
+  color:#b14943;
+  text-decoration:none;
+  display:block;
+  padding:9px;
+  width:35px;
+  }
+  
+  a#prev:hover, a#next:hover {
+  color:#FFF;
+  text-shadow:.5px 0px #b14943;  
+  }
+  
+  .quote-phrase, .quote-author {
+  font-family:sans-serif;
+  font-weight:300;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 5px 20px;
+  font-family:'Lato', Calibri, Arial, sans-serif;
+  line-height: 40px;
+  }
+  
+  .quote-phrase {
+  font-size:34px;
+  color:#FFF;
+  font-style:italic;
+  letter-spacing: 2px;
+  }
+  
+  .quote-marks {
+  font-size:50px;
+  padding:0 3px 3px;
+  font-weight: bold;
+  position:inherit;
+  }
+  
+  .quote-author {
+  font-style:normal;
+  font-size:20px;
+  color:#fff;
+  font-weight:400;
+  height: 30px;
+  }
+  
+  .quoteContainer, .authorContainer {
+  display: table;
+  width: 100%;
+  }
+
 }
+
+// #testimonial-home{
+//   padding-top: 8%;
+//   background: none;
+//   .slides{
+//     height: 500px !important;
+//   }.indicators{
+//     z-index: 100;
+//   }
+// }
 
 header.testimonial-bg {
   background-image: url('/assets/testimonial_banner.jpg');
