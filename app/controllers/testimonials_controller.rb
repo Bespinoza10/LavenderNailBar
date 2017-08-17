@@ -23,7 +23,7 @@ class TestimonialsController < ApplicationController
 
   def update
     if @testimonial.update testimonial_params
-      redirect_to root_path, notice: "You have updated your testimonial from #{@testimonial.name}"
+      redirect_to root_path, notice: "You have updated your testimonial from '#{@testimonial.name}'"
     else
       render 'edit'
     end
