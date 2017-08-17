@@ -1,4 +1,5 @@
 class TestimonialsController < ApplicationController
+  before_action :authenticate_user!
   before_action :find_testimonial,  only: [:show, :edit, :update, :destroy]
   def index
     @testimonials = Testimonial.all
