@@ -1,0 +1,23 @@
+// Place all the styles related to the contacts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#contact{
+  .slider{
+    height: 500px !important;
+    .slides{
+      height: 500px !important;
+      .caption{
+        top: 30%;
+      }
+    }
+  }
+}
+
+#contact_form{
+  padding-top: 5%;
+  padding-bottom: 5%;
+  h5{
+    padding-bottom: 5%;
+  }
+}
