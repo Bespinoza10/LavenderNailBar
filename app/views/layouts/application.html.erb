@@ -29,7 +29,7 @@
               <li><a href="#home">Home</a></li>
               <li><a href="#about">About Us</a></li>
               <li><a href="#services">Services</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><%= link_to "Contact", new_contact_path%></li>
               <% if user_signed_in? %>
                 <li><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></li>
                 <li><%= link_to "New Testimonial", new_testimonial_path%></li>
@@ -41,7 +41,7 @@
               <li><a href="#home">Home</a></li>
               <li><a href="#about">About Us</a></li>
               <li><a href="#services">Services</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><%= link_to "Contact", new_contact_path%></li>
               <% if user_signed_in? %>
                 <li><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></li>
                 <li><%= link_to "New Testimonial", new_testimonial_path%></li>
@@ -62,7 +62,7 @@
               <li><a href="<%= root_path %>">Home</a></li>
               <li><a href="<%= root_path %>#about">About Us</a></li>
               <li><a href="<%= root_path %>#services">Services</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><%= link_to "Contact", new_contact_path%></li>
               <% if user_signed_in? %>
                 <li><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></li>
                 <li><%= link_to "New Testimonial", new_testimonial_path%></li>
@@ -74,7 +74,7 @@
               <li><a href="<%= root_path %>">Home</a></li>
               <li><a href="<%= root_path %>#about">About Us</a></li>
               <li><a href="<%= root_path %>#services">Services</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><%= link_to "Contact", new_contact_path%></li>
               <% if user_signed_in? %>
                 <li><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></li>
                 <li><%= link_to "New Testimonial", new_testimonial_path%></li>
@@ -96,7 +96,7 @@
               <li><a href="<%= root_path %>#home">Home</a></li>
               <li><a href="<%= root_path %>#about">About Us</a></li>
               <li><a href="<%= root_path %>#services">Services</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><%= link_to "Contact", new_contact_path%></li>
               <% if user_signed_in? %>
                 <li><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></li>
               <%else%>
@@ -107,7 +107,38 @@
               <li><a href="<%= root_path %>#home">Home</a></li>
               <li><a href="<%= root_path %>#about">About Us</a></li>
               <li><a href="<%= root_path %>#services">Services</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><%= link_to "Contact", new_contact_path%></li>
+              <% if user_signed_in? %>
+                <li><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></li>
+              <%else%>
+                <li><%= link_to "Sign In", new_user_session_path%></li>
+              <%end%>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <%end%>
+
+    <% if current_page?(new_contact_path) %>
+      <nav>
+        <div class="nav-wrapper">
+          <div class="container">
+            <%= link_to "Lavender Nail Bar", root_path, class: "brand-logo", id: "home"%>
+            <a href="" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">=</i></a>
+            <ul class="right hide-on-med-and-down nav-links">
+              <li><a href="<%= root_path %>">Home</a></li>
+              <li><a href="<%= root_path %>#about">About Us</a></li>
+              <li><a href="<%= root_path %>#services">Services</a></li>              
+              <% if user_signed_in? %>
+                <li><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></li>
+              <%else%>
+                <li><%= link_to "Sign In", new_user_session_path%></li>
+              <%end%>
+            </ul>
+            <ul class="side-nav" id="mobile-demo">
+              <li><a href="<%= root_path %>">Home</a></li>
+              <li><a href="<%= root_path %>#about">About Us</a></li>
+              <li><a href="<%= root_path %>#services">Services</a></li>
               <% if user_signed_in? %>
                 <li><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></li>
               <%else%>
