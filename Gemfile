@@ -29,7 +29,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'materialize-sass'
 gem 'devise'
-
+gem 'mail_form'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
