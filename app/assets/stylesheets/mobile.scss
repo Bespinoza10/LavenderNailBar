@@ -1,0 +1,30 @@
+@media screen and (max-width: 786px){
+  header.home-bg{
+    background-attachment: scroll;
+    div.bg-text{
+      display: none !important;
+    }
+    div.bg-text-mobile{
+      display: block !important;
+    }
+  }
+  #testimonial-home{
+    padding-bottom: 20px;
+    max-height: 700px !important;
+    .valign-wrapper{
+      display: block;
+      align-items: normal;
+    }.text-slider{
+      width: 100%;
+      text-align: center;
+    }.button-appt{
+      max-width: 90%;
+      float: none !important;
+      margin: 0 auto !important;
+      padding: 20px;
+      a{
+        width: 100%;
+      }
+    }
+  }
+}

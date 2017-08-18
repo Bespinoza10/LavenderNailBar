@@ -24,6 +24,22 @@ header.home-bg {
       background: none;
     }
   }
+  div.bg-text-mobile {
+    display: none;
+    padding-top: 15vh;
+    h1 {
+      color: #fff;
+      text-align: left;
+      margin-left: 20px;
+      letter-spacing: 12px;
+    }
+    .appt-btn{
+      outline: 6px solid $white;
+      padding: 0em 4em !important;
+      letter-spacing: 3px;
+      background: none;
+    }
+  }
 }
 
 footer.page-footer{
