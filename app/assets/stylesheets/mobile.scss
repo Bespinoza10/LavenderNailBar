@@ -9,10 +9,10 @@
     }
   }
   #testimonial-home{
-    // padding-top: 0px !important;
-    // padding-bottom: 20px !important;
-    // background-attachment: scroll !important;
-    // background-size: cover !important;
+    padding-top: 0px !important;
+    padding-bottom: 20px !important;
+    background-attachment: scroll !important;
+    background-size: cover !important;
     max-height: 700px !important;
     .valign-wrapper{
       display: block;
@@ -27,7 +27,15 @@
       padding: 20px;
       a{
         width: 100%;
+        margin-top: -200px;
       }
+    }
+  }
+  #services{
+    padding-top: 20% !important;
+    padding-bottom: 20% !important;
+    #manicure, #pedicure{
+      padding-bottom: 8%;
     }
   }
 }

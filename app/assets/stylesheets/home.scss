@@ -35,7 +35,7 @@ header.home-bg {
     }
     .appt-btn{
       outline: 6px solid $white;
-      padding: 0em 4em !important;
+      padding: 0px;
       letter-spacing: 3px;
       background: none;
     }
@@ -47,5 +47,7 @@ footer.page-footer{
   .tel{
     color: $white;
     text-decoration: underline;
+  }.footer-copyright{
+    height: 100% !important;
   }
 }
